@@ -15,7 +15,7 @@ class ProductsController < ApplicationController
     if @product.save
       redirect_to products_path, notice: "El producto fue publicado con exito"
     else
-      render :mew
+      render :new
     end
   end
 
